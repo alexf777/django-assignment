@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <meta charset="UTF-8">
+        <title>{{ page.header }}</title>
+    </head>
+    <body>
+        <header>{{ page.header }}</header>
+        <main>
+            <p>{{ page.body }}</p>
+            <p>User Status: {{ user_status }}</p>
+            <p>User IP: {{ user_ip }}</p>
+        </main>     
+        <footer>{{ page.footer }}</footer>
+    </body>
+</html>
